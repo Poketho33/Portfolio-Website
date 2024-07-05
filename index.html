@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thomas Eleveld - Portfolio">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; frame-src 'none';"> -->
+    <link rel="icon" type="image/x-icon" href="/img/NebulaBackground.ico">
+    
+    <title>Thomas Eleveld</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__Logo"></a>
+            <!-- Navbar Items -->
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#projects" class="navbar__links">Projects</a>
+                </li>
+                <li class="navbar__button">
+                    <a href="#contactme" class="button">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <h1 class="hero__heading">Hi, I'm Thomas</h1>
+            <p class="hero__footing">Website designer  and game developer</p>
+        </div>
+        <picture>
+            <source srcset="/img/mountain.webp" type="image/webp">
+            <img src="/img/mountain.png" alt="mountain-drawing" class="hero__image">
+        </picture>
+        <picture>
+            <source srcset="/img/mountain__2.webp" type="image/webp">
+            <img src="/img/mountain__2.png" alt="mountain-drawing" class="hero__image__2">
+        </picture>
+        <div class="hero__dec"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </section>
+
+
+    <!-- work  -->
+    
+    <section class="work" id="projects">
+        <div class="work__container">
+            <div class="cards__container">
+                <div class="card card1">
+                    <img src="/img/Time-game.png" alt="" class="card__image">
+                </div>
+                <div class="card card2">
+                    <img src="/img/Screenshot 2024-04-20 163843.png" alt="" class="card__image">
+                </div>
+                <h1 class="work__subheader">Explore my portfolio <span class="highlight">highlights</span></h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="contactme" id="contactme">
+        <div class="contactme__container">
+            <h1 class="contactme__heading">Get In Touch</h1>
+  
+            <form id="myForm" action="submit.php" method="POST">
+              <div class="input__container">
+                <input class="textInput" placeholder="Name" type="text" name="name" minlength="2" size="20" required>
+                <div class="topline"></div>
+                <div class="underline"></div>
+                <div class="leftline"></div>
+              </div>
+        
+              <div class="input__container">
+                <input class="textInput" placeholder="E-mail" type="email" name="email" minlength="2" size="20" required>
+                <div class="topline"></div>
+                <div class="underline"></div>
+                <div class="leftline"></div>
+              </div>
+        
+              <div class="input__container">
+                <textarea class="messageInput" placeholder="Message" name="message" rows="5" cols="22" required></textarea>
+              </div>
+        
+              <div class="submit__container">
+                  <button type="submit" class="submit__button">Submit</button>
+              </div>
+            </form>
+  
+            <img src="/img/paperplane__gif.gif" alt="paperplane gif" class="paperplane__gif">
+        
+            <p class="contactme__message"></p>
+        </div>
+    </section>
+
+
+    <!-- Footer  -->
+
+    <section class="footer">
+        <div class="footer__container">
+            <p class="footer__copyright">Copyright &#169 2023 All Rights Reserved</p>
+        </div>
+    </section>
+
+    <script defer src="app.js"></script>
+ </body>
+</html>
