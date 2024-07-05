@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Inter';
-  src: url('/Inter/static/Inter-Bold.ttf') format('truetype'),
-  /* Add more font formats and sources as needed */
+  src: url('/Portfolio-Website/Inter/static/Inter-Bold.ttf') format('truetype');
 }
 
 
