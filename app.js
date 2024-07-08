@@ -53,19 +53,19 @@ stars.forEach(star => {
 
 
 
-// cards
+// // cards
 
-const cards = document.querySelectorAll(".card");
-const workHeader = document.querySelector(".work__subheader");
+// const cards = document.querySelectorAll(".card");
+// const workHeader = document.querySelector(".work__subheader");
 
-workHeader.classList.add("active");
+// workHeader.classList.add("active");
 
-cards.forEach(card => {
-  card.addEventListener('mouseenter', () => { 
-    workHeader.classList.remove("active");
-  });
+// cards.forEach(card => {
+//   card.addEventListener('mouseenter', () => { 
+//     workHeader.classList.remove("active");
+//   });
 
-  card.addEventListener('mouseleave', () => { 
-    workHeader.classList.add("active");
-  });
-});
+//   card.addEventListener('mouseleave', () => { 
+//     workHeader.classList.add("active");
+//   });
+// });
