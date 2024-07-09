@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Thomas Eleveld - Portfolio">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; frame-src 'none';"> 
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; frame-src 'none';"> -->
     <link rel="icon" type="image/x-icon" href="/img/NebulaBackground.ico">
     
     <title>Thomas Eleveld</title>
@@ -37,12 +37,12 @@
             <p class="hero__footing regular-font">Website and game developer</p>
         </div>
         <picture>
-            <source srcset="/Portfolio-Website/img/mountain.webp" type="image/webp">
-            <img src="/Portfolio-Website/img/mountain.png" alt="mountain-drawing" class="hero__image">
+            <source srcset="/img/mountain.webp" type="image/webp">
+            <img src="/img/mountain.png" alt="mountain-drawing" class="hero__image">
         </picture>
         <picture>
-            <source srcset="/Portfolio-Website/img/mountain__2.webp" type="image/webp">
-            <img src="/Portfolio-Website/img/mountain__2.png" alt="mountain-drawing" class="hero__image__2">
+            <source srcset="/img/mountain__2.webp" type="image/webp">
+            <img src="/img/mountain__2.png" alt="mountain-drawing" class="hero__image__2">
         </picture>
         <div class="hero__dec"></div>
         <div class="star"></div>
@@ -55,10 +55,11 @@
     
     <section class="work" id="projects">
         <div class="work__container">
-            <h1 class="work__subheader regular-font">Explore my <span class="highlight bold-font">highlights</span></h1>
+            <h1 class="work__subheader regular-font">Explore my</h1>
+            <h1 class="highlight bold-font">highlights</h1>
             <div class="cards__container">
                 <div class="card card1">
-                    <img src="/Portfolio-Website/img/Time-game.png" alt="" class="card__image">
+                    <img src="/img/Time-game.png" alt="" class="card__image">
                     <div class="card__color blue"></div>
                     <p class="card__header">Time Among <br> the Stars</p>
                     <p class="card__subheader">A timing game where players try to achieve the high-score through the precision of their clicks.</p>
@@ -66,7 +67,7 @@
                     <a href="https://poketho33.github.io/Time-Among-the-Stars/" target="_blank" class="card_link-2">In Action</a>
                 </div>
                 <div class="card card2">
-                    <img src="/Portfolio-Website/img/Screenshot 2024-04-20 163843.png" alt="" class="card__image">
+                    <img src="/img/Screenshot 2024-04-20 163843.png" alt="" class="card__image">
                     <div class="card__color yellow"></div>
                     <p class="card__header black">Portfolio <br> Website</p>
                     <p class="card__subheader black">A portfolio website showcasing my best projects, highlighting my skills and achievements.</p>
@@ -80,27 +81,31 @@
     <section class="tools">
         <div class="tools__container">
           <h1 class="tools__heading black">Tools</h1>
-          <div class="img__row">
-            <picture>
-                <source srcset="/Portfolio-Website/img/JS.webp" type="image/webp">
-                <img src="/Portfolio-Website/img/JS.png" alt="html-logo" class="tool" id="js">
-            </picture>
-            <picture>
-                <source srcset="/Portfolio-Website/img/CSS3.webp" type="image/webp">
-                <img src="/Portfolio-Website/img/CSS3.png" alt="html-logo" class="tool">
-            </picture>
-            <picture>
-                <source srcset="/Portfolio-Website/img/HTML5.webp" type="image/webp">
-                <img src="/Portfolio-Website/img/HTML5.png" alt="html-logo" class="tool">
-            </picture>
-            <picture>
-                <source srcset="/Portfolio-Website/img/unity.webp" type="image/webp">
-                <img src="/Portfolio-Website/img/unity.png" alt="html-logo" class="tool">
-            </picture>
-            <picture>
-                <source srcset="/Portfolio-Website/img/csharp.webp" type="image/webp">
-                <img src="/Portfolio-Website/img/csharp.png" alt="html-logo" class="tool">
-            </picture>
+          <div class="tools_media">
+            <div class="img__row">
+                <picture>
+                    <source srcset="/img/JS.webp" type="image/webp">
+                    <img src="/img/JS.png" alt="html-logo" class="tool" id="js">
+                </picture>
+                <picture>
+                    <source srcset="/img/CSS3.webp" type="image/webp">
+                    <img src="/img/CSS3.png" alt="html-logo" class="tool">
+                </picture>
+                <picture>
+                    <source srcset="/img/HTML5.webp" type="image/webp">
+                    <img src="/img/HTML5.png" alt="html-logo" class="tool">
+                </picture>
+              </div>
+              <div class="img__row">
+                <picture>
+                    <source srcset="/img/unity.webp" type="image/webp">
+                    <img src="/img/unity.png" alt="html-logo" class="tool">
+                </picture>
+                <picture>
+                    <source srcset="/img/csharp.webp" type="image/webp">
+                    <img src="/img/csharp.png" alt="html-logo" class="tool">
+                </picture>
+              </div>
           </div>
         </div>
     </section>

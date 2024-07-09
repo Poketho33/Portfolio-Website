@@ -1,16 +1,29 @@
-// parallax effect - hero
-
 const heading = document.querySelector(".hero__heading");
 const title = document.querySelector(".hero__footing"); 
 const mountain = document.querySelector(".hero__image"); 
 
-window.addEventListener('scroll', () => {
-  let scroll = window.scrollY;
-  heading.style.transform = `translateY(${scroll * 1.4}px)`;
-  title.style.transform = `translateY(${scroll * 1.6}px)`;
+function handleScroll() {
+  if (window.innerWidth >= 700) {
+    let scroll = window.scrollY;
+    heading.style.transform = `translateY(${scroll * 1.4}px)`;
+    title.style.transform = `translateY(${scroll * 1.6}px)`;
+    mountain.style.transform = `translateY(${scroll * 0.2 - 20}px)`;
+  } else {
+    // Reset transformations when screen width is less than 700px
+    heading.style.transform = 'translateY(0)';
+    title.style.transform = 'translateY(0)';
+    mountain.style.transform = 'translateY(0)';
+  }
+}
 
-  mountain.style.transform = `translateY(${scroll * 0.2 - 20}px)`;
-});
+// Initial check
+handleScroll();
+
+// Check on scroll
+window.addEventListener('scroll', handleScroll);
+
+// Check on resize
+window.addEventListener('resize', handleScroll);
 
 
 // shooting stars
@@ -50,22 +63,3 @@ stars.forEach(star => {
   updateStarProperties(star);
   star.classList.add('active');
 });
-
-
-
-// // cards
-
-// const cards = document.querySelectorAll(".card");
-// const workHeader = document.querySelector(".work__subheader");
-
-// workHeader.classList.add("active");
-
-// cards.forEach(card => {
-//   card.addEventListener('mouseenter', () => { 
-//     workHeader.classList.remove("active");
-//   });
-
-//   card.addEventListener('mouseleave', () => { 
-//     workHeader.classList.add("active");
-//   });
-// });
