@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'Inter';
-  src: url('/Inter/static/Inter-Bold.ttf') format('truetype');
+  src: url('/Portfolio-Website/Inter/static/Inter-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Inter';
   font-weight: 400;
-  src: url('/Inter/static/Inter-Regular.ttf') format('truetype');
+  src: url('/Portfolio-Website/Inter/static/Inter-Regular.ttf') format('truetype');
 }
 
 :root{
