@@ -63,3 +63,15 @@ stars.forEach(star => {
   updateStarProperties(star);
   star.classList.add('active');
 });
+
+// mobile menu
+const fullScreenMenu = document.getElementById('fullScreenMenu');
+const menuToggleOn = document.getElementById('menuToggle');
+const navCirc = document.querySelector(".circ"); 
+
+function toggleMenu() {
+  fullScreenMenu.classList.toggle('active');
+  navCirc.classList.toggle('active');
+}
+
+menuToggleOn.addEventListener('click', toggleMenu);
