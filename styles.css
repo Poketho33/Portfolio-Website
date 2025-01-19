@@ -569,7 +569,27 @@ scroll-behavior: smooth;
   color: var( --lighter-black-color);
 }
 
-
+@media (hover: none) {
+  .card.active > .card__color {
+    opacity: 1;
+  }
+  
+  .card.active > .card__header {
+    transform: translateY(-180px);
+  }
+  
+  .card.active > .card__subheader {
+    transform: translateY(-320px);
+  }
+  
+  .card.active > .card_link-1 {
+    transform: translateY(-230px);
+  }
+  
+  .card.active > .card_link-2 {
+    transform: translateY(-230px);
+  }
+}
 
 /* 
 

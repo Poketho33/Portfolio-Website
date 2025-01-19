@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', () => {
+
 const heading = document.querySelector(".hero__heading");
 const title = document.querySelector(".hero__footing"); 
 const mountain = document.querySelector(".hero__image"); 
@@ -75,3 +77,17 @@ function toggleMenu() {
 }
 
 menuToggleOn.addEventListener('click', toggleMenu);
+
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    // Remove 'active' class from all cards
+    cards.forEach(c => c.classList.remove('active'));
+    
+    // Toggle 'active' class on the clicked card
+    card.classList.toggle('active');
+  });
+});
+  
+});
